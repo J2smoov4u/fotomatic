@@ -22,14 +22,22 @@ body {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
+  margin: auto;
+}
+.button:hover {
+  opacity: 0.5;
+  box-shadow: 2px 2px 2px white;
+
 }
 
 .image-container {
   overflow: hidden;
+  max-height: 39.69rem;
 }
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -124,7 +132,7 @@ header .mobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 43.5rem;
+  height: 35.5rem;
   background-image: url('https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-1/solution/resources/images/banner-landingpage.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -132,11 +140,13 @@ header .mobile {
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
+  padding: 0 2.5rem 2.5rem 2.5rem;
   border: solid 1px #979797;
   border-radius: 10px;
   background-color: #9dc20b;
   margin-left: 6.25rem;
+  display: flex;
+  max-height: 25rem;
 }
 
 #sign-up-cta .content {
@@ -149,6 +159,7 @@ header .mobile {
   display: flex;
   flex-flow: column wrap;
   flex: 1 1 25.625rem;
+
 
 }
 
@@ -175,7 +186,9 @@ header .mobile {
 
 #sign-up-cta .button {
   margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
+  padding: 1.25rem 2rem;
+  width: 200px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 760px) {
@@ -243,7 +256,7 @@ header .mobile {
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 2px auto;
 }
 
 .feature h2 {
@@ -251,6 +264,7 @@ header .mobile {
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  margin-top: 2.5rem;
 }
 
 .feature h3 {
@@ -313,6 +327,7 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
 }
 
 @media only screen and (max-width: 760px) {
@@ -351,11 +366,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -364,21 +379,21 @@ header .mobile {
   color: #4a4a4a;
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -389,17 +404,28 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  /*padding: 1.5rem 2rem;
+  height: 3.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;*/
 }
 
 footer .content {
   color: white;
   display: flex;
-  font-size: .75rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  /*margin-left: 2rem;*/
+  font-family: "Roboto";
+  font-style: normal;
+
 }
 
 footer .copyright {
-  flex-grow: 1;
+  flex-grow: 2;
 }
 
 @media only screen and (min-width: 760px) {
